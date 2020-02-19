@@ -33,7 +33,7 @@ public class EmployeeController {
 	
 	@GetMapping("/getEmployee/{id}")
 	public Optional<Employee> getEmployeeById(@PathVariable int id) {
-		return er.findById(id);
+		return er.findEmployeeById(id);
 	}
 	
 	@DeleteMapping("/deleteEmployee/{id}")
